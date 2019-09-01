@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:src="@drawable/drawable_dash_line"
+        android:layerType="software"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="100"
+        app:scale_base_width="500">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="75"
+            app:scale_left="10"
+            app:scale_top="10"
+            app:scale_width="120"
+            android:scaleType="fitXY"
+            android:id="@+id/youtube_img"
+
+            ></ImageView>
+
+        <TextView
+            android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        app:scale_textsize="23"
+        app:scale_left="150"
+        app:scale_width="330"
+        app:scale_height="30"
+        app:scale_top="10"
+            android:id="@+id/youtube_title"
+        android:text="03:09"></TextView>
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:scale_textsize="20"
+            app:scale_left="150"
+            app:scale_width="230"
+            app:scale_height="30"
+            app:scale_top="50"
+            android:id="@+id/youtube_chan"
+            android:text="03:09"></TextView>
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/youtube_id"></TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/youtube_channel"></TextView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#262e60"
+    tools:context="com.arora.arora.aurora.com.arora.ar.Main2Activity">
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="100"
+        android:background="#262e60"
+        android:title="공유"
+        app:showAsAction="never" />
+    <item
+        android:background="#262e60"
+        android:id="@+id/menu_calling"
+        android:orderInCategory="100"
+        android:title="벨소리 설정"
+        app:showAsAction="never" />
+</menu>

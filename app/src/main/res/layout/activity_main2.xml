@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.arora.arora.Main2Activity"
+    android:background="@drawable/aurora_back_12">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:background="#a6161D50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/scalableLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:scale_base_height="115"
+            app:scale_base_width="500"
+            android:id="@+id/scalableLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="50"
+                app:scale_left="30"
+                app:scale_top="40"
+                android:text="Arora Music Player"
+                app:scale_textsize="30"
+                android:textColor="#fff"
+                app:scale_width="260" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                app:scale_height="50"
+                app:scale_left="420"
+                app:scale_top="40"
+                android:id="@+id/search_icon"
+                app:scale_width="50">
+
+            </ImageView>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tabs"
+            style="@style/MyCustomTabLayout"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노래" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천" />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/lin_minplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <LinearLayout
+        android:id="@+id/lin_minplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#262e60"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="80"
+            app:scale_base_width="500"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="60"
+                app:scale_left="20"
+                app:scale_top="10"
+                app:scale_width="60"
+                android:id="@+id/player_ui_img"
+                android:src="@drawable/aurora_empty_album_img"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                app:scale_textsize="20"
+                app:scale_left="105"
+                app:scale_width="200"
+                app:scale_top="25"
+                android:id="@+id/player_ui_title"
+                android:text="[Favor.] Cheer Upsfafsaffasasfsafasf"></TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fast_rewind_black_24dp"
+                app:scale_height="50"
+                app:scale_left="320"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/player_ui_forward"
+                app:scale_top="20"
+                app:scale_width="50"
+                >
+            </ImageButton>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/player_ui_btn_pause"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_play_arrow_black_24dp"
+                app:scale_height="60"
+                app:scale_left="370"
+                app:scale_top="10"
+                app:scale_width="60"
+                >
+            </ImageButton>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fast_forward_black_24dp"
+                app:scale_height="45"
+                app:scale_left="430"
+                app:scale_top="20"
+                android:id="@+id/player_ui_rewind"
+                android:background="?attr/selectableItemBackground"
+                app:scale_width="50"
+                >
+            </ImageButton>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

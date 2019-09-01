@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/drawable_dash_line"
+        android:layerType="software"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="80"
+        app:scale_base_width="500">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="60"
+            app:scale_left="20"
+            app:scale_top="15"
+            app:scale_width="60"
+            android:id="@+id/item_album_img"
+            android:src="@drawable/test_album_img"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:scale_textsize="20"
+            app:scale_left="105"
+            app:scale_width="200"
+            android:textColor="#fff"
+            app:scale_height="30"
+            app:scale_top="15"
+            android:id="@+id/item_title"
+            android:text="[Favor.] Cheer Upsfafsaffasasfsafasf"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:scale_textsize="15"
+            app:scale_left="105"
+            app:scale_width="200"
+            android:textColor="#fff"
+            app:scale_height="30"
+            app:scale_top="50"
+            android:id="@+id/item_subtitle"
+            android:text="[Favor.] Cheer Upsfafsaffasasfsafasf"></TextView>
+
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:scale_textsize="20"
+            app:scale_left="340"
+            app:scale_width="70"
+            app:scale_height="50"
+            app:scale_top="25"
+            android:id="@+id/item_duration"
+            android:text="03:09"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="40"
+            app:scale_left="430"
+            app:scale_top="20"
+            app:scale_width="40"
+            android:id="@+id/item_more_btn"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            ></ImageView>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/item_artisid"></TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/list_path"></TextView>
+</LinearLayout>

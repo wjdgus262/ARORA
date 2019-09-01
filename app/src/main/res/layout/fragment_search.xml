@@ -1,0 +1,77 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.arora.arora.SearchFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a6161D50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:id="@+id/scalableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/intro_logo"
+            app:layout_constraintBottom_toTopOf="@+id/scalableLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:scale_base_height="115"
+            app:scale_base_width="500">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:scale_height="50"
+                app:scale_left="10"
+                app:scale_top="40"
+                android:id="@+id/back_icon"
+                app:scale_width="50"></ImageView>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="60"
+                app:scale_left="90"
+                app:scale_top="40"
+                android:id="@+id/search_edit"
+                app:scale_textsize="20"
+                android:textColor="#fff"
+                android:theme="@style/EditTheme"
+                app:scale_width="300" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                app:scale_height="50"
+                app:scale_left="420"
+                app:scale_top="40"
+                android:id="@+id/search_icon"
+                app:scale_width="50">
+
+            </ImageView>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/appBarLayout"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/search_recy"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"></android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

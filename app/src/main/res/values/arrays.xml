@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array">
+        <item>너 자신을 알라\n\n- 소크라세트 -</item>
+        <item>영혼에는 나이가 없다.\n\n- 법정스님 -</item>
+        <item>당신은 자신이\n할수 있다는 것을 알고 있다.\n\n"- 매 웨스트 -</item>
+        <item>경험이란,\n 완전한 정답을 얻는 것이 아니라. \n 오답을 꺠달아 하나씩 지워가는 과정이다.</item>
+        <item>마음을 비우니까\n 편안해졌다\n 본질을 바라보게 된것이다\n삶, 그거면 됬대.</item>
+        <item>시간은 나는게 아니라, 내는 것이고\n 기운은 내는게 아니라, 나는 것이다.</item>
+        <item>생각해 보았다 \n 나는 끝내 마쳐야 할 순가에\n 웃고 넘어갈 수 있었는가?</item>
+
+
+    </string-array>
+
+</resources>

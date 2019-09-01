@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arora.arora.MainActivity"
+    android:gravity="bottom"
+    app:umanoDragView="@id/dragview"
+    android:background="@drawable/aurora_back_12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_width="500"
+                app:scale_base_height="100">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    app:scale_height="50"
+                    app:scale_left="15"
+                    android:id="@+id/music_view_back"
+                    app:scale_top="35"
+                    app:scale_width="50"></ImageView>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arora_logo"
+                    app:scale_height="75"
+                    app:scale_left="175"
+                    app:scale_top="20"
+                    app:scale_width="150"></ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="40"
+                    app:scale_left="380"
+                    app:scale_top="40"
+                    app:scale_width="40"
+                    android:id="@+id/ringtone_icon"
+                    android:background="@drawable/ic_music_note_black_24dp"
+                    ></ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="40"
+                    app:scale_left="430"
+                    app:scale_top="40"
+                    app:scale_width="40"
+                    android:id="@+id/share_icon"
+                    android:background="@drawable/ic_share_black_24dp"
+                    ></ImageView>
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                app:scale_base_height="380"
+                app:scale_base_width="500"
+                android:layout_height="wrap_content">
+
+                <com.chibde.visualizer.CircleBarVisualizer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="380"
+                    app:scale_left="25"
+                    app:scale_top="0"
+                    app:scale_width="450"
+                    android:id="@+id/visualizer"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="230"
+                    app:scale_left="135"
+                    app:scale_top="75"
+                    app:scale_width="230"
+                    android:src="@drawable/aurora_empty_album_img"
+                    android:id="@+id/view_circle_img"></de.hdodenhof.circleimageview.CircleImageView>
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="170"
+                app:scale_base_width="500"
+                >
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    app:scale_textsize="24"
+                    app:scale_left="75"
+                    app:scale_width="350"
+                    app:scale_height="30"
+                    app:scale_top="20"
+                    android:gravity="center"
+                    android:id="@+id/view_title"
+                    android:text="03:09"></TextView>
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    app:scale_textsize="20"
+                    app:scale_left="75"
+                    app:scale_width="350"
+                    app:scale_height="30"
+                    app:scale_top="60"
+                    android:gravity="center"
+                    android:id="@+id/view_sub"
+                    android:text="03:09"></TextView>
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:layout_width="match_parent"
+                    android:id="@+id/sound_seekbar"
+                    app:scale_textsize="20"
+                    app:scale_left="-24"
+                    app:scale_width="546"
+                    app:scale_height="30"
+                    app:scale_top="100"
+                    android:thumb="@drawable/seekbar_seekbar1_thumb"
+                    android:progressDrawable="@drawable/seekbar_seekbar1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    app:scale_textsize="20"
+                    app:scale_left="5"
+                    app:scale_width="70"
+                    app:scale_height="30"
+                    app:scale_top="130"
+                    android:text="03:09"
+                    android:id="@+id/current_duration"
+                    android:gravity="center"
+                    ></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    app:scale_textsize="20"
+                    app:scale_left="420"
+                    app:scale_width="70"
+                    app:scale_height="30"
+                    app:scale_top="130"
+                    android:text="03:09"
+                    android:id="@+id/total_duration"
+                    android:gravity="center"
+                    ></TextView>
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="150"
+            app:scale_base_width="500">
+
+        <ImageView
+                android:id="@+id/view_rewind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/ic_fast_rewind_black_24dp"
+                app:scale_height="60"
+                app:scale_left="110"
+                app:scale_top="50"
+                app:scale_width="60"></ImageView>
+
+            <ImageView
+                android:id="@+id/view_pause_play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_play_arrow_black_24dp"
+                app:scale_height="100"
+                app:scale_left="200"
+                app:scale_top="20"
+                app:scale_width="100" />
+
+            <ImageView
+                android:id="@+id/view_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_fast_forward_black_24dp"
+                app:scale_height="45"
+                app:scale_left="330"
+                app:scale_top="50"
+                app:scale_width="45" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/loop_icon"
+                app:scale_height="45"
+                app:scale_left="415"
+                app:scale_top="50"
+                android:id="@+id/loop_icon"
+                app:scale_width="45" />
+
+            <Spinner
+                android:id="@+id/speedOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:spinnerMode="dropdown"
+                android:textColor="#fff"
+                app:scale_height="40"
+                app:scale_left="10"
+                app:scale_textsize="20"
+                app:scale_top="61"
+                app:scale_width="90"></Spinner>
+
+            <TextView
+            android:id="@+id/speed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1.0x"
+            android:textColor="#fff"
+            app:scale_height="60"
+            app:scale_left="10"
+            app:scale_textsize="20"
+            app:scale_top="50"
+            app:scale_width="60"></TextView>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dragview"
+        android:orientation="vertical"
+        android:focusable="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#99252D60">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="더 많은 노래 및 아티스트 정보"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/youtube_recy">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

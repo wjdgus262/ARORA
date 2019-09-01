@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/intro_root_view"
+    tools:context="com.arora.arora.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/intro_back_img"
+        android:src="@drawable/aurora_back">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4d000000"
+        ></RelativeLayout>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/scalableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/intro_logo"
+        app:layout_constraintBottom_toTopOf="@+id/scalableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scale_base_height="400"
+        app:scale_base_width="500">
+
+        <ImageView
+            android:id="@+id/intro_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arora_logo"
+            app:scale_height="150"
+            app:scale_left="50"
+            app:scale_top="200"
+            app:scale_width="400" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/scalableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scalableLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:scale_base_height="400"
+        app:scale_base_width="500">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="110"
+            app:scale_left="50"
+            app:scale_top="0"
+            app:scale_width="400"
+            android:text="그림자를 두려워 말라. \n 그림자란 빛이 어디간 가까운 곳에서 \n 비치고 있음을 뜻하는 것이다."
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            app:scale_textsize="20"
+            android:id="@+id/words"/>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:scale_height="30"-->
+        <!--            app:scale_left="50"-->
+        <!--            app:scale_top="120"-->
+        <!--            app:scale_width="400"-->
+        <!--            android:text="- 루스 E. 렌컬 -"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            app:scale_textsize="20"-->
+        <!--            android:id="@+id/words_writer"/>-->
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</android.support.constraint.ConstraintLayout>

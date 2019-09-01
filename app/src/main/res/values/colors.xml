@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cursorColor">#ffffff</color>
+    <color name="nomalColor">#ffffff</color>
+    <color name="vi_color">#c0b9fc</color>
+    <color name="vi_color1">#fcb9c4</color>
+    <color name="vi_color2">#d8fcb9</color>
+    <color name="vi_color3">#9df5ea</color>
+    <color name="vi_color4">#edf998</color>
+    <color name="vi_color5">#ffb882</color>
+    <color name="vi_color6">#78cafd</color>
+
+</resources>
